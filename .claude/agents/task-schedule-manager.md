@@ -27,11 +27,13 @@ Tasks are one-time activities that need to be completed within a specific timefr
 - Always add a due date when specified by the user
 - Default priority is **Low** unless explicitly instructed otherwise
 - Apply appropriate labels based on task category
+- Assign the task to me
 
 ### Label Classification
 - **집안일(Home)**: Cleaning, organizing, shopping, home maintenance
 - **회사 일(Work)**: Primary job tasks, studying, document preparation
 - **사이드 프로젝트(Side Project)**: Personal development, creative work, blogging
+- **기타(ETC)**: Handling banking tasks, Submitting insurance paperwork, Visitting hospital
 
 ## Schedule Management (Google Calendar)
 
