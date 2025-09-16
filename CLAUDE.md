@@ -1,6 +1,6 @@
 # Personal Assistant Project - Configuration
 
-<!-- Updated: 2025-09-16 - Added repository URL information -->
+<!-- Updated: 2025-09-17 - Added task-schedule-manager agent information -->
 
 ## Project Overview
 
@@ -23,6 +23,7 @@ This is a Personal Assistant application designed to integrate with GitHub and o
 - **Agent System**: Specialized agents in `.claude/agents/` for different functionalities
   - `git-workflow-manager`: Handles Git operations and repository management
   - `claude-md-manager`: Manages long-term configuration and instruction persistence
+  - `task-schedule-manager`: Handles Linear task management and Google Calendar integration
 - **Environment Configuration**: `.env` file for secure credential storage
 - **Security Layer**: `.gitignore` properly configured to exclude sensitive files
 
@@ -32,7 +33,8 @@ PersonalAssistant/
 ├── .claude/
 │   └── agents/
 │       ├── git-workflow-manager.md
-│       └── claude-md-manager.md
+│       ├── claude-md-manager.md
+│       └── task-schedule-manager.md
 ├── .env (excluded from version control)
 ├── .gitignore
 └── CLAUDE.md (this file)
@@ -87,6 +89,13 @@ PersonalAssistant/
 - Preserve existing instructions unless explicitly told otherwise
 - Ensure instructions are actionable and specific
 
+### Task Schedule Manager
+- Integrate with Linear for issue and task management
+- Manage Google Calendar events and scheduling
+- Handle task scheduling and calendar integration workflows
+- Support both one-time tasks and recurring scheduled activities
+- Coordinate between Linear tasks and calendar events for comprehensive project management
+
 ## GitHub Integration Guidelines
 
 ### API Usage
@@ -127,12 +136,16 @@ PersonalAssistant/
 
 ### Required Environment Variables
 - `GITHUB_PAT`: GitHub Personal Access Token for API operations
+- `LINEAR_API_KEY`: Linear API key for task and issue management
+- `GOOGLE_CALENDAR_CREDENTIALS`: Google Calendar API credentials for event management
 - Additional variables to be documented as the project grows
 
 ### Development Dependencies
 - Git workflow management requires proper Git configuration
 - MCP server integration for enhanced GitHub operations
 - Agent system requires proper .claude directory structure
+- Linear API integration for task management capabilities
+- Google Calendar API integration for scheduling functionality
 
 ## Project-Specific Constraints
 
